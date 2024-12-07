@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor de Palabras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Traductor de Palabras</h1>
+  </header>
+
+  <main>
+    <h2>Diccionario</h2>
+    <fieldset>
+        <legend>Categorías:</legend>
+        <div id="botones-categorias"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dirección de Traducción:</legend>
+        <label>
+          <input type="radio" name="direccion-traduccion" value="en-a-es" checked>
+          Inglés a Español
+        </label>
+        <label>
+          <input type="radio" name="direccion-traduccion" value="es-a-en">
+          Español a Inglés
+        </label>
+      </fieldset>
+      
+      <section id="seccion-palabras" style="display: none;">
+          <h2 id="titulo-categoria"></h2>
+          <button type="button" id="ordenar-boton">Ordenar Alfabéticamente</button>
+        <table id="tabla-palabras">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Palabra</th>
+              <th>Traducción</th>
+              <th>Ejemplo</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+  
+    <section>
+      <h2>Traductor</h2>
+      <form id="formulario-traductor">
+
+        <label for="palabra-ingresada">Escribe una palabra:</label>
+        <input type="text" id="palabra-ingresada" placeholder="Ingresa una palabra" required />
+
+        <button type="submit">Traducir</button>
+      </form>
+
+      <p id="resultado-traduccion"></p>
+
+    </section>
+
+    <section>
+      <h2>Añadir Palabra</h2>
+      <form id="formulario-anadir-palabra">
+        <label for="categoria-nueva">Selecciona una categoría:</label>
+        <select id="categoria-nueva"></select>
+
+        <label for="nueva-palabra-ingles">Palabra en Inglés:</label>
+        <input type="text" id="nueva-palabra-ingles" placeholder="Ingresa palabra en inglés" required />
+
+        <label for="nueva-palabra-espanol">Palabra en Español:</label>
+        <input type="text" id="nueva-palabra-espanol" placeholder="Ingresa palabra en español" required />
+
+        <label for="nuevo-ejemplo">Ejemplo:</label>
+        <input type="text" id="nuevo-ejemplo" placeholder="Ingresa un ejemplo" required />
+
+        <button type="submit">Añadir Palabra</button>
+      </form>
+      <p id="mensaje-anadir-palabra"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Nicole Quintero Jaraba 2901682.</p>
+  </footer>
+
+  <script src="dictionary.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
