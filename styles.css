@@ -1,95 +1,107 @@
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: #6200ea;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  h1, h2, h3 {
-    margin: 0.5rem 0;
-  }
-  
-  main {
-    padding: 1rem;
-  }
-  
-  form {
-    margin-bottom: 2rem;
-  }
-  
-  label {
-    display: block;
-    margin: 0.5rem 0;
-  }
-  
-  input[type="text"], select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  
-  fieldset {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  button {
-    background-color: #6200ea;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #4500b0;
-  }
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ddeafa;
+  color: #333;
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-  }
-  
-  th, td {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f4f4f9;
-  }
+header {
+  background-color: rgb(51, 96, 247);
+  color:black;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 0 10px #1b011b;
+  border: 2px solid black;
+}
 
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #6200ea;
-    color: white;
-  }
+main {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 2%;
+}
+
+
+.Traductor1{
+  font-size: 110%;
+  width: 100%;
+  margin-top: -700px;
+  position: relative;
+  padding: 15%;
+}
+
+fieldset {
+  border: 6px solid black;
+  margin-bottom: 4%;
+  height: 100%;
+  width: 40%;
+  box-shadow: 0 0 10px #1b011b;
+}
+
+button {
+  background-color: rgb(51, 96, 247);
+  color:black;  
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #1b011b;
+  border: 2px solid black;
+}
+
+button:hover {
+  background-color: rgb(51, 96, 247);
+  box-shadow: 0 0 10px #1b011b;
+  border: 2px solid black;
+}
+
+table {
+  width: 40%;
+  border-collapse: collapse;
+  margin-top: 5%;
+  position: relative;
+  left: 450px;
+  box-shadow: 0 0 10px #1b011b;
+  border: 6px solid black;
+}
+
+th, td {
+  border: 2px solid black;
+
+}
+
+th {
+  background-color: rgb(51, 96, 247);
+}
+td{
+  background-color:rgb(178, 195, 252) ;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(51, 96, 247);
+  color:black;
+  box-shadow: 0 0 10px #1b011b;
+  border: 2px solid black;
+}
 
 #ordenar-boton {
-    background-color: #6200ea;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  #ordenar-boton:hover {
-    background-color: #30122e;
-  }
-  
+  background-color: rgb(51, 96, 247);
+  box-shadow: 0 0 10px #1b011b;
+  border: 6px solid black;
+  color:black;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
